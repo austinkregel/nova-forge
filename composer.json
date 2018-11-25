@@ -1,0 +1,44 @@
+{
+    "name": "kregel/nova-forge",
+    "description": "A Laravel Nova tool.",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0",
+        "kregel/laravel-data-store": "^0.0.3",
+        "phpunit/phpunit": "^7.4",
+        "themsaid/forge-sdk": "^2.0",
+        "laravel/nova": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kregel\\NovaForge\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kregel\\Tests\\NovaForge\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kregel\\NovaForge\\ForgeToolServiceProvider"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/austinkregel/nova.git"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
