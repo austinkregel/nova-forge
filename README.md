@@ -1,4 +1,4 @@
-# A Nova card to give you weather information
+# A Nova tool to also display forge information
 Redis based storage, and powered by [forge.laravel.com](https://forge.laravel.com)
 
 All you will need is a subscription from Laravel Forge, and Predis for key persistence.
